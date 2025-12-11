@@ -35,7 +35,7 @@ body {
 
 .conteiner {
   width: 1158px;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
   margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@ a {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header .header-container {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,7 +85,7 @@ a {
 .nav-link {
   display: block;
   padding-top: 24px;
-  padding-bottom: 24;
+  padding-bottom: 24px;
   font-size: 16px;
   font-weight: 500;
   color: #2e2f42;
@@ -126,14 +126,14 @@ a {
 
 .hero-section {
   padding-top: 188px 0;
-  padding-bottom: 188px;
+  padding-bottom: 188px 0;
   text-align: center;
   background-color: #2e2f42;
   color: #ffffff;
 }
 
 .hero-title {
-  max-width: 496;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0 auto 48px;
@@ -144,6 +144,10 @@ a {
 }
 
 .btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   background-color: #4d5ae5;
   padding: 16px 32px;
   border-radius: 4px;
@@ -162,6 +166,7 @@ a {
 /* FEATURES */
 
 .section-features {
+  padding: 120px 0;
 }
 
 .features-list {
@@ -170,7 +175,7 @@ a {
 }
 
 .features-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100%-3 * 72px) / 4);
 }
 
 .visually-hidden {
@@ -205,7 +210,7 @@ a {
 /* TEAM */
 
 .section-team {
-  padding: 156px 0;
+  padding: 120px 0 120px;
   background-color: #f4f4fd;
 }
 
@@ -233,6 +238,14 @@ a {
   border-radius: 0 0 4px 4px;
   padding-bottom: 32px;
   text-align: center;
+  width: calc((100% - 3 * 24px) / 24px);
+}
+
+.team-photo {
+  padding: 32px 0 32px;
+}
+
+.team-info {
 }
 
 .team-name {
@@ -321,6 +334,8 @@ a {
 }
 
 .logo .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-white {
